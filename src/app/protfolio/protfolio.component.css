@@ -1,0 +1,42 @@
+.layer{
+  background-color:RGBA(26, 188, 156, 0.9);
+  position: absolute;
+  font-size: 70px;
+  right: 0px;
+  top: 0;
+  left: 0px;
+  bottom: 0;
+  opacity: 0;
+  transition: opacity 0.5s;
+  cursor: pointer;
+}
+.layer:hover{
+  opacity: 95%;
+}
+.my-Top{
+  margin-top: 70px;
+  font-size: 40px;
+}
+.icon-home{
+  position: relative;
+}
+.icon-home::after{
+  content: "";
+  position: absolute;
+  width: 90px;
+  height: 4px;
+  background-color: black;
+  left: 51%;
+  top: 51%;
+  transform: translate(15%,-60%);
+}
+.icon-home::before{
+  content: "";
+  position: absolute;
+  width: 90px;
+  height: 4px;
+  background-color: black;
+  right: 51%;
+  top: 51%;
+  transform: translate(-15%,-60%);
+}
